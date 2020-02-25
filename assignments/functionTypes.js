@@ -287,33 +287,37 @@ square(21); // 441
 
 //Function Decleration
 function doMath(operation, x, y) {
-  if(operation == "sum")
-    return x + y;
-  else if(operation == "subtract")
-    return x-y;
-  else if(operation == "multiply")
-    return x*y;
-  else if(operation == "divide")
-    return x/y;
-  else
-  {
-    alert("Invalid operator");
+  switch(operation){
+    case "sum": 
+      return x + y;
+    case "subtract":
+      return x - y;
+    case "multiply": 
+      return x * y;
+    case "divide":
+      return x / y;
+    default:
+      alert("Invalid operator");
+      break;
+    
   }
 }
 
 // Function Expression
 let doMath = function(operation, x, y) {
-  if(operation == "sum")
-    return x + y;
-  else if(operation == "subtract")
-    return x-y;
-  else if(operation == "multiply")
-    return x*y;
-  else if(operation == "divide")
-    return x/y;
-  else
-  {
-    alert("Invalid operator");
+  switch(operation){
+    case "sum": 
+      return x + y;
+    case "subtract":
+      return x - y;
+    case "multiply": 
+      return x * y;
+    case "divide":
+      return x / y;
+    default:
+      alert("Invalid operator");
+      break;
+    
   }
 };
 
@@ -322,17 +326,19 @@ let doMath = function(operation, x, y) {
 // Arrow Function With Curly Bracket
 
 let doMath = (operation, x, y) => {
-  if(operation == "sum")
-    return x + y;
-  else if(operation == "subtract")
-    return x-y;
-  else if(operation == "multiply")
-    return x*y;
-  else if(operation == "divide")
-    return x/y;
-  else
-  {
-    alert("Invalid operator");
+  switch(operation){
+    case "sum": 
+      return x + y;
+    case "subtract":
+      return x - y;
+    case "multiply": 
+      return x * y;
+    case "divide":
+      return x / y;
+    default:
+      alert("Invalid operator");
+      break;
+    
   }
 };
 
